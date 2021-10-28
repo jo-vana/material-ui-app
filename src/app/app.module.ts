@@ -4,19 +4,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule} from '@angular/material/button';
-import {LayoutModule} from '@angular/cdk/layout';
+import { MaterialModule } from './material/material.module';
+import { HeaderComponent } from './header/header.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule,
-    LayoutModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
