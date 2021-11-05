@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataStorageService } from '../data-storage.service';
 
 @Component({
   selector: 'app-header',
@@ -9,9 +10,13 @@ export class HeaderComponent implements OnInit {
 
   title = "Material UI App";
   notifications = 5;
-  constructor() { }
+  constructor(private dataStorage: DataStorageService) { }
 
   ngOnInit(): void {
+  }
+
+  onFetchUsers() {
+    this.dataStorage.fetchUsers();
   }
 
 }
