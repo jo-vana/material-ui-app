@@ -9,6 +9,7 @@ import { MaterialModule } from './material/material.module';
 import { HeaderComponent } from './header/header.component';
 import { UsersComponent } from './users/users.component';
 import { HomeComponent } from './home/home.component';
+import { DialogBoxComponent } from './users/dialog-box/dialog-box.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     HeaderComponent,
     UsersComponent,
-    HomeComponent
+    HomeComponent,
+    DialogBoxComponent
   ],
   imports: [
     BrowserModule,

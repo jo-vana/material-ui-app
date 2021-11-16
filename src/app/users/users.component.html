@@ -21,7 +21,8 @@
             <th mat-header-cell *matHeaderCellDef> Action </th>
             <td mat-cell *matCellDef="let element" class="action-link"> 
                 <button mat-icon-button color="primary" 
-                class="edit-btn">
+                class="edit-btn"
+                (click)="openDialog(element.id, element.firstName, element.lastName, element.dateOfBirth)">
             <mat-icon>edit</mat-icon>
           </button>
           <button mat-icon-button color="warn"
